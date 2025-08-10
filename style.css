@@ -738,3 +738,338 @@ table {
 .dot-oh.is-active-oh {
   background: rgb(17, 108, 244);
 }
+
+/*footer 강재구 부분*/
+.main-size-kang{
+  width:85%;
+}
+
+.main-h2tag-item-kang{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  padding-top:2rem;
+  padding-bottom: 2rem;
+}
+
+.justify-content-center-kang{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.carousel3-item-kang{
+  padding-bottom:7rem;
+  color:black;
+}
+
+.button-item-kang{
+  border-radius: 20px;
+  padding :1rem 1rem;
+  background-color: rgba(234, 234, 236, 0.6)
+}
+
+.form-label-kang{
+  color:black;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.checkbox-background-kang{
+  background-color: white;
+}
+
+.form-label-checkbox-kang{
+  display:contents;
+  width:20%;
+  color:black;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.form-label-last-kang{
+  display: flex;
+  width:20%;
+  color:black;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 700;
+  justify-self: center;
+  margin-bottom: 1rem;
+}
+
+.form-label-partner-kang{
+  display: flex;
+  width:23%;
+  color:black;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 700;
+  justify-self: center;
+  margin-bottom: 0.5rem;
+  margin-top: 5rem;
+}
+
+.footer-size-kang{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-nav-font-kang{
+    font-size: 13px;
+}
+
+.footer-menu-privacy-policy-kang{
+    font-weight: 700;
+}
+
+.footer-border-kang{
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.footer-nav-color-kang{
+  background-color: white !important;
+}
+
+.footer-font-kang{
+    font-size: 12px;
+}
+
+.footer-h2-margin-kang{
+  margin-bottom: 10px;
+}
+
+.footer-atag-margin-kang{
+  margin-bottom: 4px;
+}
+
+.footer-atag-style-kang{
+    text-decoration: none;
+    color: var(--color-neutral-b-80, rgba(41, 41, 45, .8));
+    font-size: 12px;
+}
+
+.footer-license-kang{
+    font-size:14px;
+    font-weight: 700;
+}
+
+.footer-mb-4-kang{
+    margin-bottom: 8px;
+}
+
+.footer-mt-4-kang{
+    margin-top: 6px;
+}
+
+.footer-navbar-kang{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer-display-kang{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.footer-warn-kang{
+  color: hsla(0, 0%, 7%, .5);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer-mobile-first-line-kang{
+  gap: 25px;
+  margin-bottom: 4px;
+  padding-left: 3rem;
+  padding-top:1rem;
+}
+
+.footer-mobile-line-deco-kang{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 4px;
+}
+
+.footer-mobile-font-kang{
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--color-neutral-b-60, rgba(41, 41, 45, .6));
+  line-height: 16px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  overflow-x: visible;
+}
+
+.footer-mobile-privacy-policy-kang{
+  font-weight: 700;
+}
+
+.footer-mobile-accordion-kang{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.form-control-kang{
+  width:30%;
+}
+
+.padding-bottom-kang{
+  padding-bottom: 3%;
+}
+
+.carousel-caption-kang{
+  top:5rem;
+  padding-top:0;
+}
+
+.check-box-kang{
+  display:flex;
+  justify-content: space-between;
+}
+
+.padding-right-kang{
+  padding-right: 1rem;
+  font-size: 18px;
+  color:white;
+}
+
+.footer-mobile-accordion-kang .accordion-item {
+  border: none;
+  background-color: #f7f7f8 !important;
+}
+
+.footer-mobile-accordion-font-kang {
+  font-size: 12px;
+  color: var(--color-neutral-b-60, rgba(41, 41, 45, .6));
+  line-height: 16px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-mobile-accordion-font-kang a{
+  text-decoration: none;
+  color: var(--color-neutral-b-60, rgba(41, 41, 45, .6));
+}
+
+.footer-mobile-accordion-header-kang {
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+}
+
+.accordion-button{
+  background-color: #f7f7f8
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f7f7f8;
+  }
+
+.footer-mobile-last-font-kang{
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--color-neutral-b-60, rgba(41, 41, 45, .6));
+  line-height: 16px;
+  height: 16px;
+  align-items: center;
+  position: relative;
+  padding:10%;
+}
+
+.navbar-kang{
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-padding-kang{
+  padding-right: 1rem;
+}
+
+.third-line-border-kang{
+  border: 1px solid #ffffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.mobile-background-color-kang{
+  background-color: #f7f7f8 !important;
+}
+
+
+@media (max-width: 1024px) {
+    .padding-bottom-kang{
+        padding:0;
+    }
+
+    .button-item-kang{
+      border-radius: 20px;
+      padding :0.5rem 0.5rem;
+      background-color: rgba(234, 234, 236, 0.6)
+    }
+
+    .carousel-caption-kang{
+      top:1rem;
+    }
+
+    .form-label-last-kang{
+      width:20%;
+      font-size: 12px;
+      margin-bottom: 1rem;
+}
+
+    .form-label-checkbox-kang{
+      width:20%;
+      font-size: 12px;
+      margin-bottom: 1rem;
+}
+
+    .form-label-partner-kang{
+      display: none;
+}
+
+    .form-label-kang{
+      margin-top:0.2rem;
+      font-size: 15px;
+      font-weight: 700;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-display-none-kang {
+        display: none;
+    }
+
+    .main-h2tag-item-kang{
+      font-size : 15px;
+      padding-top:1rem;
+      padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .footer-mobile-display-kang {
+        display: none;
+    }
+}
