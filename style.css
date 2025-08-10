@@ -1,740 +1,391 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
+ol, ul {
+	list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+	quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-@media (max-width: 600px) {
-  /* 모바일 전용 스타일 */
-  .nav-oh {
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav-second-line-first-oh .mobile-menu-all {
-    display: none !important;
-  }
 
-  .search-oh {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    position: relative;
-    left: 20%;
-  }
-
-  .input-wrapper {
-    position: relative;
+/* 메인 공통레이아웃*/
+.main-container-son {
     width: 100%;
-    max-width: 400px;
-    top: 1rem;
-    max-height: 50px;
-    right: 20%;
-  }
+    padding: 0 1rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
 
-  .card-event-oh {
-    display: flex;
-    position: relative;
-    top: 1rem;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
 
-  .nav-second-line-oh {
-    margin: 2rem;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 1.5rem;
-  }
+/* 메인 캐러셀 */
+.carousel.son {
+    width: 100%;
+    height: 336px;
+    border-radius: 2rem;
+}
 
-  .dropdown-content-oh {
+.carousel-wrap.son {
+    max-width: 1320px;
+    margin: 0 auto;
+    border-radius:2rem;
+    overflow:hidden;
+    position:relative;
+}
+
+.carousel-item.son img {
+    width: 100%;
+    height: 336px;
+    object-fit:cover;
+    border-radius: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev.son {
+  left: -5% ;
+}
+
+.carousel-control-next.son {
+  right: -5%;
+}
+
+.carousel-caption.son {
+    bottom: 6rem;
+    text-align: left;
+}
+
+.carousel-caption.son br {
     display: none;
-    position: absolute;
-    background-color: rgb(209, 247, 244);
-    width: max-content !important;
-    height: fit-content !important;
-    top: 1rem;
-    left: 0;
-    z-index: 99;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    opacity: 0.8;
-  }
-  .menu-else-oh {
-    max-width: 100%;
+}
+
+.carousel.son h5 {
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 3px 7px rgb(0, 0, 0, 0.4);
+}
+
+.carousel.son p {
+    font-size: 1.3rem;
+    text-shadow: 2px 3px 7px rgb(0, 0, 0, 0.4);
+}
+
+/*메인 예약 메뉴바*/
+.booking.son {
+    background: white;
+    border-radius: 2rem;
+    color: black;
+    border: 1px solid rgb(227, 227, 227);
+    box-shadow: 0px 0px 30px 1px #eeeeee;
+    margin-bottom: 24px;
+}
+
+.booking-nav-tab.son {
     display: flex;
-    gap: 0.5rem !important;
-  }
-
-  .dropdown-oh a {
-    display: flex;
-    width: auto;
-    white-space: nowrap;
-  }
-  .menu-all-oh {
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
-    width: fit-content;
-  }
-
-  .menu-else-oh .dropdown-oh .dropdown-content-oh {
-    position: absolute;
-    left: 0;
-    top: 2.5rem;
-    max-height: 70vh;
-    overflow: auto;
-  }
-  .menu-else-oh .dropdown-oh .dropdown-content-oh.fixed-on-mobile {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-70%);
-    z-index: 1000;
-  }
-
-  .dropdown-oh a::after {
-    content: " /";
-  }
-
-  .mobile-menu-all {
-    display: none;
-  }
+    padding: 0;
 }
 
-.nav-oh {
-  margin: 2rem;
-  display: flex;
-  justify-content: space-between;
-}
-.title-oh a {
-  text-decoration: none;
-  color: rgb(17, 108, 244);
+.booking-nav-item.son {
+    list-style-type: none;
+    font-weight: bold;
 }
 
-.plane-icon-oh {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: nowrap;
+.booking-nav-link.son {
+    color: rgb(186, 186, 186);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
 }
 
-.Trevia {
-  font-family: Impact, "Arial Narrow Bold", sans-serif;
-  font-size: 50px;
-}
-.search-oh {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+.booking-nav-link.son.active {
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: rgb(240, 244, 255);
+    color: #0d6efd;;
 }
 
-.hot-button-oh {
-  position: relative;
-  top: 1rem;
-}
-.Hot-oh {
-  border: 2px solid rgb(168, 6, 168);
-  color: rgb(168, 6, 168);
-  padding: 0 0.7rem;
-  margin: 0 0.5rem;
+.booking-label.son {
+    border: none;
 }
 
-.input-wrapper {
-  position: relative;
-  max-width: 400px;
-  top: 1rem;
-  max-height: 50px;
+.booking .row.son {
+    padding: 0 12px;
+    margin-top: 10px;
 }
 
-.search-input-oh {
-  border-radius: 30px;
-  width: 100%;
-  min-width: 300px;
-  max-width: 100%;
-  height: 40px;
-  padding: 0 2rem;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  outline: none;
+.booking .col-md.son {
+    padding: 12px 20px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 12px;
+} 
+
+.booking .col-md.son span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(161, 161, 161);
 }
 
-.search-icon-oh {
-  position: absolute;
-  top: 25%;
-  right: 1rem;
-}
-.card-event-oh {
-  display: flex;
-  position: relative;
-  bottom: 1rem;
-  align-items: center;
-  gap: 1rem;
+.booking .col-md.son p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.card-img-oh {
-  width: 40px;
-  height: auto;
-  transform: rotate(25deg);
+.booking .col-md.son .text {
+    color: rgb(204, 204, 204);
 }
 
-.nav-second-line-oh {
-  margin: 2rem;
-  display: flex;
-  justify-content: space-between;
+.booking .col-md-auto.son button{
+    height: 66px;
+    font-weight: bold;
+    border-radius: 12px;
 }
 
-.nav-second-line-first-oh {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+.booking .col-md-auto.son button i {
+    margin-right: 5px;
+}
+/* 메인 섹션 1,2 반응형 */
+/* 반응형 태블릿 */
+@media screen and (max-width:1024px) {
+    .main-container.son {
+        max-width: 95%;
+    }
+
+    .carousel-caption.son {
+         bottom: 6.5rem;
+    }
+
+    .carousel-caption.son h5 {
+        font-size: 2rem;
+    }
+
 }
 
-.menu-else-oh {
-  display: flex;
-  gap: 2rem;
-}
+/* 반응형 모바일 */
+@media screen and (max-width:600px) {
+    .carousel-wrap.son {
+    max-width: 538px;
+    margin: 0 auto;
+    border-radius:2rem;
+    overflow:hidden;
+    position:relative;
+    }
 
-.menu-icon-oh {
-  display: flex;
-  gap: 0.3rem;
-}
+    .booking.son {
+        margin-bottom: 10px;    
+    }
 
-.nav-second-line-second-oh {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
+    .col-md-auto.son {
+        display: flex;
+        justify-content: center;
+    }
 
-.nav-second-line-second-oh a {
-  text-decoration: none;
-  color: black;
-  position: relative; /* ::after의 기준 */
-  display: inline-block; /* 높이/line-box 안정화 */
-  padding-bottom: 4px;
-}
+    .carousel-caption.son {
+    bottom: 6rem;
+    text-align: left;
+    }
 
-.nav-second-line-second-oh a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0; /* padding-bottom과 연동됨 */
-  width: 100%;
-  height: 3px;
-  background-color: rgb(17, 108, 244);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-.nav-second-line-second-oh a:hover {
-  color: rgb(17, 108, 244);
-}
+    .carousel-caption.son h5 {
+        font-size: 1.8rem;
+    }
 
-.nav-second-line-second-oh a:hover::after {
-  transform: scaleX(1);
-}
+    .carousel-caption.son p {
+        font-size: 1rem;
+    }
 
-.dropdown-oh {
-  position: relative;
-}
+    .carousel-caption.son br {
+        display:block;
+    }
+    }
+    /* 메인 섹션 1,2 반응형 종료 */
 
-.dropdown-oh a {
-  position: relative;
-  color: black;
-  display: block;
-  text-decoration: none;
-  padding-bottom: 4px;
-}
-
-.dropdown-oh a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0; /* padding-bottom과 연동됨 */
-  width: 100%;
-  height: 3px;
-  background-color: rgb(17, 108, 244);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-  z-index: 999;
-}
-
-.dropdown-oh a .link-text::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%; /* 글씨 길이만큼 */
-  height: 3px;
-  background-color: rgb(17, 108, 244);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.dropdown-oh a:hover .link-text {
-  color: rgb(17, 108, 244);
-}
-
-.dropdown-oh a:hover .link-text::after {
-  transform: scaleX(1); /* 글씨 길이만큼만 밑줄 확장 */
-}
-
-.dropdown-oh a:hover {
-  color: rgb(17, 108, 244);
-}
-
-.dropdown-oh a:hover::after {
-  transform: scaleX(1);
-}
-
-.dropdown-content-oh {
-  display: none;
-  position: absolute;
+/* 여행지 추천 캐러셀 */
+.travel-section-son {
+  border: 1px solid rgb(209, 247, 244);
+  border-radius: 20px;
   background-color: rgb(209, 247, 244);
-  width: 20vw;
-  height: 50vh;
-  top: 1rem;
-  left: 0;
-  z-index: 99;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  opacity: 90%;
-}
-.dropdown-content-oh a {
-  display: inline-block; /* block → inline-block */
 }
 
-.dropdown-mega-oh {
-  min-width: 60vw;
-  max-width: 100%;
-  width: fit-content;
-  min-height: 40vh;
-  max-height: 100%;
-  height: fit-content;
-}
-
-.dropdown-oh:hover .dropdown-content-oh {
-  display: block;
-}
-
-.menu-all-oh {
-  display: flex;
-  gap: 3rem;
-  flex-wrap: nowrap;
-  margin: 1rem;
-}
-
-.menu-all-section-oh {
-  border-bottom: 2px solid black;
-  margin-bottom: 1rem;
-}
-
-.menu-anchor-all-oh a {
-  display: block;
-  margin-top: 1rem;
-}
-
-.menu-anchor-oversea-oh a {
-  margin: 1rem;
-  display: flex;
-}
-
-/* 태블리 사이즈 네비게이션 */
-
-@media (min-width: 600px) and (max-width: 1023px) {
-  /* 상단 타이틀+검색 영역 */
-  .nav-oh {
-    margin: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    flex-wrap: wrap; /* 줄바꿈 허용 */
-    justify-content: center;
-  }
-
-  .search-oh {
-    order: 2; /* 타이틀 다음 줄로 */
-    flex: 1 1 100%; /* 전체 폭 차지 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    position: static; /* 모바일에서 주던 left 오프셋 제거 */
-  }
-
-  .input-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 520px; /* 모바일(400px)보다 약간 넓게 */
-    top: 0;
-    right: 0;
-    max-height: none;
-  }
-
-  .card-event-oh {
-    position: static;
-    gap: 0.75rem;
-  }
-
-  /* 2번째 라인 전체 래퍼 */
-  .nav-second-line-oh {
-    margin: 1.5rem;
-    display: flex;
-    flex-direction: column; /* 위: 메뉴 / 아래: 로그인 영역 */
-    gap: 1rem;
-    align-items: center;
-  }
-
-  /* 메뉴 그룹 */
-  .nav-second-line-first-oh {
-    display: flex;
-    gap: 1rem; /* 데스크톱보다 촘촘하게 */
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .menu-else-oh {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  /* 태블릿에서는 '전체메뉴' 다시 표시 */
-  .nav-second-line-first-oh .mobile-menu-all {
-    display: flex !important;
-  }
-
-  /* 드롭다운 크기/줄바꿈 */
-  .dropdown-oh a {
-    white-space: nowrap; /* 메뉴 텍스트 줄바꿈 방지 */
-  }
-  .dropdown-content-oh {
-    width: max-content;
-    height: auto;
-    top: 2.25rem; /* 살짝 아래로 */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  /* 메가 메뉴는 태블릿에서 너무 크지 않게 */
-  .dropdown-mega-oh {
-    min-width: 50vw;
-    max-width: 90vw;
-    width: fit-content;
-    min-height: 30vh;
-    max-height: 70vh;
-    overflow: auto;
-  }
-
-  /* 로그인/회원가입 영역 */
-  .nav-second-line-second-oh {
-    display: flex;
-    gap: 1.25rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-/* 메인파트*/
-
-.review-rate-oh {
-  max-width: 1100px;
-  margin: 24px auto 8px;
-  font-weight: 900;
-  font-size: 24px;
-  margin-left: 3rem;
-}
-
-.carousel-oh {
-  --cards-per-view-oh: 1; /* 기본: 모바일 1장 */
-  --card-gap-oh: 16px; /* 카드 사이 간격 */
-  --card-radius-oh: 16px;
-  --badge-size-oh: 56px;
-  --shadow-oh: 0 8px 24px rgba(0, 0, 0, 0.2);
-  --text-900-oh: #111827; /* Tailwind gray-900 느낌 */
-  --text-600-oh: #4b5563;
-  --brand-oh: #f59e0b; /* amber-500 느낌 */
-  --surface-oh: #ffffff;
-  --surface-2-oh: #f3f4f6;
-}
-
-@media (min-width: 600px) {
-  /* 태블릿: 2장 */
-  .carousel-oh {
-    --cards-per-view-oh: 2;
-  }
-}
-@media (min-width: 1024px) {
-  /* 데스크톱: 3장 */
-  .carousel-oh {
-    --cards-per-view-oh: 3;
-  }
-}
-
-/* ===== 레이아웃 ===== */
-.carousel-oh {
-  position: relative;
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 48px; /* 좌우 버튼 공간 */
-  box-sizing: border-box;
-}
-.viewport-oh {
-  overflow: hidden;
-}
-.track-oh {
-  display: flex;
-  gap: var(--card-gap-oh);
-  will-change: transform;
-  transition: transform 0.4s ease;
-}
-
-/* ===== 카드 ===== */
-.card-oh {
-  flex: 0 0
-    calc(
-      (100% - (var(--card-gap-oh) * (var(--cards-per-view-oh) - 1))) /
-        var(--cards-per-view-oh)
-    );
-  background: var(--surface-oh);
-  border-radius: var(--card-radius-oh);
-  box-shadow: var(--shadow-oh);
-  overflow: hidden;
-  position: relative;
-}
-.thumb-oh {
-  position: relative;
-  width: 100%;
-  padding-top: 66.666%; /* 3:2 비율 */
-  overflow: hidden;
-}
-.thumb-oh img {
-  position: absolute;
-  inset: 0;
+.travel-section-son img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-}
-.badge-oh {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: var(--badge-size-oh);
-  height: var(--badge-size-oh);
-  border-radius: 12px;
-  background: linear-gradient(180deg, #fbbf24, #f59e0b);
-  color: #2b2b2b;
-  font-weight: 800;
-  font-size: 12px;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.35);
-}
-.badge-oh span {
-  display: block;
-  line-height: 1.1;
-  text-align: center;
-}
-.body-oh {
-  padding: 16px 16px 18px;
-}
-.title-oh {
-  font-weight: 800;
-  color: var(--text-900-oh);
-  margin: 0 0 8px;
-  line-height: 1.35;
-  font-size: 16px;
-}
-.tags-oh {
-  color: var(--text-600-oh);
-  font-size: 13px;
-  margin-bottom: 10px;
-}
-.price-oh {
-  font-weight: 800;
-  font-size: 18px;
 }
 
-/* ===== 컨트롤 ===== */
-.ctrl-oh {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgb(17, 108, 244);
-  border-radius: 99px;
-  background: var(--surface-oh);
-  box-shadow: var(--shadow-oh);
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-.ctrl-prev-oh {
-  left: 0.5rem;
-}
-.ctrl-next-oh {
-  right: 0.5rem;
-}
-.ctrl-oh[disabled] {
-  opacity: 0.4;
-  cursor: default;
+.carousel-img-son{
+  position: relative;
+  height: clamp(588px, 32vw, 588px);
+  overflow: hidden;
+  border-radius: 20px; 
 }
 
-.ctrl-icon-oh {
-  width: 14px;
-  height: 14px;
-  border-top: 2px solid #111;
-  border-right: 2px solid #111;
-}
-.ctrl-prev-oh .ctrl-icon-oh {
-  transform: rotate(-135deg);
-  margin-left: 2px;
-}
-.ctrl-next-oh .ctrl-icon-oh {
-  transform: rotate(45deg);
-  margin-right: 2px;
+.travel-section-son .row-son {
+justify-content: space-evenly;
 }
 
-/* ===== 인디케이터 (옵션) ===== */
-.dots-oh {
+.travel-section-son .carousel-img-son {
+  width: 45.333333%;
+}
+
+.travel-section-son .carousel-title-son {
   display: flex;
-  gap: 6px;
-  justify-content: center;
-  margin-top: 14px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(209, 247, 244);
 }
-.dot-oh {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: var(--surface-2-oh);
+
+.travel-section-son .travel-subtitle-son{
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  border-bottom: 3px solid  rgb(17, 108, 244);;
+  padding: 0 0 8px;
+  height: auto;
+  margin: 18px 0;
 }
-.dot-oh.is-active-oh {
-  background: rgb(17, 108, 244);
+
+.travel-section-son .travel-title-son{
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-bottom: 18px 0;
+}
+
+.travel-section-son .travel-bullets-son {
+  line-height: 1.5;
+  color: rgb(116, 116, 116);
+  margin: 18px 0;
+}
+
+.travel-section-son .deal-thumb-son {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.travel-section-son .travel-deal-son {
+  display: flex;
+  margin: 18px 0;
+}
+
+.travel-section-son .travel-deal-title-son,
+.travel-section-son .travel-deal-text-son {
+margin: 10px 0;
+}
+
+.travel-section-son .carousel-control-prev-son {
+  left: -50px;
+}
+
+.travel-section-son .carousel-control-prev-son .icon-round-son {
+  position: absolute;
+  padding: 20px;
+  transform: translate(2px);
+  border-radius: 50%;
+  background: #0d6efd;;
+  z-index: -1;
+}
+
+.travel-section-son .carousel-control-next-son {
+  right: -50px;
+}
+
+.travel-section-son .carousel-control-next-son .icon-round-son {
+  position: absolute;
+  padding: 20px;
+  transform: translate(-2px);
+  border-radius: 50%;
+  background:#0d6efd;;
+  z-index: -1;
+}
+
+/* 여행지 추천 캐러셀 반응형 */
+/* 반응형 태블릿 */
+@media screen and (max-width:1024px) {
+  .main-container-son {
+      max-width: 95%;
+  }
+
+  .travel-section-son .carousel-img-son {
+    width: 80%;
+    height: clamp(288px, 32vw, 588px);
+  }
+
+  .travel-section-son .carousel-title-son {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+}
+
+/* 반응형 모바일 */
+@media screen and (max-width:600px) {
+  .travel-section-son {
+    height: auto;
+  }
+  .travel-section-son img {
+      border-radius: 20px;
+      object-fit: cover;
+  }
+
+   .travel-section-son .carousel-control-prev-son .icon-round-son {
+      display: none;
+   }
+   .travel-section-son .carousel-control-next-son .icon-round-son {
+     display: none;
+   }
+
+   .travel-section-son .carousel-title-son {
+    align-items: center;
+   }
+    /* 여행지 추천 캐러셀 반응형 종료 */
 }

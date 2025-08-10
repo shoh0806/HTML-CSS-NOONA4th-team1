@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trevia</title>
-    <link
+    <title>Document</title>
+   <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
@@ -17,484 +17,279 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <div class="nav-oh">
-          <div class="title-oh">
-            <div class="plane-icon-oh">
-              <i class="fa-solid fa-plane"></i>
-              <i class="fa-solid fa-plane-departure"></i>
-              <i class="fa-solid fa-plane-arrival"></i>
-              <i class="fa-solid fa-plane"></i>
+     <main class="main-container main-container-son">
+        <!-- 메인 캐러셀 -->
+        <div id="carouselExampleCaptions" class="carousel slide son">
+            <div class="carousel-indicators son">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active son" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <a href="#"><h1 class="Trevia">Trevia</h1></a>
-            <div class="plane-icon-oh">
-              <i class="fa-solid fa-plane"></i>
-              <i class="fa-solid fa-plane-departure"></i>
-              <i class="fa-solid fa-plane-arrival"></i>
-              <i class="fa-solid fa-plane"></i>
+            <div class="carousel-inner son">
+            <div class="carousel-item active son">
+                <img src="./img/main-carousel01 .png" class="d-block w-100 son" alt="...">
+                <div class="carousel-caption d-none d-md-block son">
+                <h5>지금 바로 예약 <br>
+                    가자, 이번엔 제대로 된 여름휴가!</h5>
+                <p>8월 한정! 인기 해외 여행지 최대 50% 할인 — 늦기 전에 예약하세요!</p>
+                </div>
             </div>
-          </div>
-
-          <div class="search-oh">
-            <div>
-              <div class="btn-group hot-button-oh">
-                <button type="button" class="btn">
-                  <span class="Hot-oh"> HOT </span>인기검색어
-                </button>
-                <button
-                  type="button"
-                  class="btn dropdown-toggle dropdown-toggle-split"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">일본</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">다낭</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">몽골</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">장가계</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">나트랑</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">홍콩</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">괌</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">푸꾸옥</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">튀르키예</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">대만</a></li>
-                </ul>
+            <div class="carousel-item son">
+                <img src="./img/main-carousel02.png" class="d-block w-100 son" alt="...">
+                <div class="carousel-caption d-none d-md-block son">
+                <h5>어디든 떠나고 싶은 당신에게 <br>
+                    지금은 반값의 기회!</h5>
+                <p>항공 + 호텔 패키지로 최대 30만원 혜택!
+                    놓치면 후회할 한정 프로모션</p>
+                </div>
+            </div>
+            <div class="carousel-item son">
+                <img src="./img/main-carousel03.png" class="d-block w-100 son" alt="...">
+                <div class="carousel-caption d-none d-md-block son">
+                <h5>혼자 떠나기 좋은 <br>
+                    해외 여행지 TOP 5</h5>
+                <p>혼행족을 위한 맞춤 플랜!
+                    싱글룸 특가 & 자유 일정 패키지 출시</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev son" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon son" aria-hidden="true"></span>
+            <span class="visually-hidden son">Previous</span>
+            </button>
+            <button class="carousel-control-next son" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon son" aria-hidden="true"></span>
+            <span class="visually-hidden son">Next</span>
+            </button>
+        </div>
+        <!--메인 예약 메뉴바 -->
+        <div class="booking container mt-4 p-4 son">
+            <ul class="booking-nav-tab mb-3 son">
+                <li class="booking-nav-item son">
+                    <a href="#" class="booking-nav-link son">항공</a>
+                </li>
+                <li class="booking-nav-item son">
+                    <a href="#" class="booking-nav-link son">호텔</a>
+                </li>
+                 <li class="booking-nav-item son">
+                    <a href="#" class="booking-nav-link son">해외패키지</a>
+                </li>
+            </ul>
+            <div class="booking-tab-content">
+                <!-- 항공 -->
+                <div class="row g-2 align-items-center son" data-tab="항공">
+                    <div class="col-md me-1 son">
+                        <span>출발지</span>
+                        <p>서울</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>도착지</span>
+                        <p class="text">도착</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>출발일/기간</span>
+                        <p>10.6(월) ~ 10.10(금)</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>인원 및 좌석</span>
+                        <p>성인 1﹒일반석</p>
+                    </div>
+                    <div class="col-md-auto son">
+                        <button class="btn btn-primary px-4 son">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        최저가 검색
+                        </button>
+                    </div>
+                </div>
+                <!-- 호텔 -->
+                  <div class="row g-2 align-items-center son" data-tab="호텔">
+                    <div class="col-md me-1 son">
+                        <span>도시 및 숙소</span>
+                        <p class="text">도시 및 숙소를 입력해주세요.</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>출발일/기간</span>
+                        <p>10.6(월) ~ 10.10(금)</p>
+                    </div>
+                    <div class="col-md-auto son">
+                        <button class="btn btn-primary px-4 son">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        최저가 검색
+                        </button>
+                    </div>
+                </div>
+                <!-- 해외패키지 -->
+                  <div class="row g-2 align-items-center son" data-tab="해외패키지">
+                    <div class="col-md me-1 son">
+                        <span>도시 및 상품</span>
+                        <p class="text">도시 및 상품명을 입력해주세요.</p>
+                    </div>
+                    <div class="col-md me-1 son">
+                        <span>출발일/기간</span>
+                        <p>모든 날짜로 검색</p>
+                    </div>
+                    <div class="col-md-auto son">
+                        <button class="btn btn-primary px-4 son">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        최저가 검색
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- 섹션3 추천 여행지 캐러셀 -->
+      <section class="travel-section-son py-5">
+        <div class="container container-son">
+          <div class="travel-carousel travel-carousel-son rounded-4">
+            <div id="travelCarousel" class="carousel carousel-son slide ">
+              <div class="carousel-inner carousel-inner-son">
+                <div class="carousel-item carousel-item-son active">
+                  <div class="row row-son g-0 0">
+                    <div class="carousel-img-son col-lg-7 position-relative">
+                      <img src="./img/travel01.png" alt="푸껫 바다">
+                    </div>
+                    <div class="carousel-title-son col-lg-5 p-4 ">
+                      <p class="travel-subtitle travel-subtitle-son">에메랄드 힐링 · 현지 문화 & 로컬 체험, 푸껫</p>
+                      <h3 class="travel-title-son">아름다운 바다가 있는 태국 최대 휴양지🌊</h3>
+                      <ul class="travel-bullets-son">
+                        <li>🍜 푸껫 올드타운 — 식민지풍 건축 & 포르투갈풍 색감의 거리</li>
+                        <li>🛕 왓찰롱 사원 체험 — 현지인들의 기도 문화</li>
+                        <li>💆 전통 타이 마사지 & 스파</li>
+                        <li>🌅 일몰 감상하며 힐링타임</li>
+                      </ul>
+                      <a href="#" class="travel-deal-son gap-3 align-items-start text-reset text-decoration-none">
+                        <img src="./img/travel-deal01.png" class="deal-thumb-son" alt="그랜드 리조트">
+                        <div class="travel-deal-inner-son">
+                          <div class="travel-deal-title-son fw-semibold">[100% 출발확정] 푸껫 5일</div>
+                          <div class="travel-deal-text-son small">#5성급 리조트 #빠통비치 #팡아만</div>
+                          <div class="travel-deal-price-son fw-bold">469,000원~</div>
+                        </div>
+                      </a>
+                      <a href="#" class="travel-deal-son gap-3 align-items-start text-reset text-decoration-none">
+                        <img src="./img/travel-deal02.png" class="deal-thumb-son" alt="힐링 패키지">
+                        <div class="travel-deal-inner-son">
+                          <div class="travel-deal-title-son fw-semibold">[하나팩 2.0] 푸껫 5일</div>
+                          <div class="travel-deal-text-son small">#힐링여행 #5성급호텔 #섬호핑</div>
+                          <div class="travel-deal-price-son fw-bold">919,000원~</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item-son">
+                  <div class="row row-son g-0">
+                    <div class="carousel-img-son col-lg-7 position-relative">
+                      <img src="./img/travel02.png" alt="두바이 사막">
+                    </div>
+                    <div class="carousel-title-son col-lg-5 p-4">
+                      <p class="travel-subtitle-son">아라비안 사막의 황금빛 모래사장</p>
+                      <h3 class="travel-title-son">두바이 사막 사파리🌵</h3>
+                      <ul class="travel-bullets-son">
+                        <li>🐪 낙타 트레킹 & 샌드보딩</li>
+                        <li>🏜 4WD 듄배싱 & 석양 감상</li>
+                        <li>🔥 베두인 캠프 BBQ 디너</li>
+                        <li>💃 전통 공연(탄누라/벨리댄스)</li>
+                      </ul>
+                      <a href="#" class="travel-deal-son gap-3 align-items-start text-reset text-decoration-none mb-3">
+                        <img src="./img/travel-deal03.png" class="deal-thumb-son" alt="사막 사파리">
+                        <div class="travel-deal-inner-son">
+                          <div class="travel-deal-title-son fw-semibold">두바이 사막 사파리 반일</div>
+                          <div class="travel-deal-text-son small">#4WD듄배싱 #베두인캠프 #BBQ</div>
+                          <div class="travel-deal-price-son fw-bold">129,000원~</div>
+                        </div>
+                      </a>
+                      <a href="#" class="travel-deal-son gap-3 align-items-start text-reset text-decoration-none">
+                        <img src="./img/travel-deal04.png" class="deal-thumb-son" alt="두바이 패키지">
+                        <div class="travel-deal-inner-son">
+                          <div class="travel-deal-title-son fw-semibold">두바이 5일 패키지</div>
+                          <div class="travel-deal-text-son small">#부르즈칼리파 #사막투어 포함</div>
+                          <div class="travel-deal-price-son fw-bold">1,299,000원~</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item-son">
+                  <div class="row row-son g-0 son">
+                    <div class="carousel-img-son col-lg-7 position-relative">
+                      <img src="./img/travel03.png" alt="아이슬란드 오로라">
+                    </div>
+                    <div class="carousel-title-son col-lg-5 p-4">
+                      <p class="travel-subtitle-son">얼음과 불의 땅에서 만나는 자연의 쇼</p>
+                      <h3 class="travel-title-son">아이슬란드 오로라 투어✨</h3>
+                      <ul class="travel-bullets-son">
+                        <li>🌌 오로라 관측 명소 체험</li>
+                        <li>🧊 골든서클(간간폭포·게이시르·싱벨리르)</li>
+                        <li>♨ 블루라군 온천 휴식</li>
+                        <li>📸 전문가 동행 촬영 팁</li>
+                      </ul>
+                      <a href="#" class="travel-deal-son gap-3 align-items-start text-reset text-decoration-none mb-3">
+                        <img src="./img/travel-deal05.png" class="deal-thumb-son" alt="오로라 헌팅">
+                        <div class="travel-deal-inner-son">
+                          <div class="travel-deal-title-son fw-semibold">레이캬비크 오로라 헌팅</div>
+                          <div class="travel-deal-text-son small">#소그룹 #사진가동행</div>
+                          <div class="travel-deal-price-son fw-bold">179,000원~</div>
+                        </div>
+                      </a>
+                      <a href="#" class="travel-deal-son gap-3 align-items-start text-reset text-decoration-none">
+                        <img src="./img/travel-deal06.png" class="deal-thumb-son" alt="아이슬란드 일주">
+                        <div class="travel-deal-inner-son">
+                          <div class="travel-deal-title-son fw-semibold">아이슬란드 7일 일주</div>
+                          <div class="travel-deal-text-son small">#골든서클 #빙하호수 #온천</div>
+                          <div class="travel-deal-price-son fw-bold">3,190,000원~</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div class="input-wrapper">
-              <input
-                type="text"
-                placeholder="시원하게 즐기는 국내여행 혜택"
-                class="search-input-oh"
-              />
-              <i class="fa-solid fa-magnifying-glass search-icon-oh"></i>
-            </div>
-            <div class="card-event-oh">
-              <img
-                src="https://financialshopping-cdn.banksalad.com/nh_zgm_vacation_6d69405eb3.png"
-                class="card-img-oh"
-                alt="여행카드"
-              />
-              <div>
-                <div>Trevia 카드</div>
-                <div>2만원 캐시백 이벤트</div>
-              </div>
+              <button class="carousel-control-prev carousel-control-prev-son" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon carousel-control-prev-icon-son" aria-hidden="true"></span>
+                <span class="icon-round-son"></span>
+                <span class="visually-hidden visually-hidden-son">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-next-son" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon carousel-control-next-icon-son" aria-hidden="true"></span>
+                <span class="icon-round-son"></span>
+                <span class="visually-hidden visually-hidden-son">Next</span>
+              </button>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+     <script>
+    // 메인 예약 메뉴바 
+    document.querySelectorAll('.booking-nav-item').forEach(tab => {
+    tab.addEventListener('click', function (e) {
+        e.preventDefault();
 
-        <div class="nav-second-line-oh">
-          <div class="nav-second-line-first-oh" id="menuGroup">
-            <div class="dropdown dropdown-oh menu-else-oh mobile-menu-all">
-              <div class="menu-icon-oh">
-                <i class="fa-solid fa-bars"></i>
-                <a href="#"> 전체메뉴</a>
-              </div>
+        const selected = this.textContent.trim();
 
-              <div
-                class="dropdown-content dropdown-content-oh dropdown-mega-oh"
-              >
-                <div class="menu-all-oh">
-                  <div>
-                    <div class="menu-all-section-oh">해외여행</div>
-                    <a href="#">해외여행 홈</a>
-                  </div>
-
-                  <div class="menu-anchor-all-oh">
-                    <div class="menu-all-section-oh">테마여행</div>
-                    <a href="#">밍글링 투어</a>
-                    <a href="#">해외골프</a>
-                    <a href="#">허니문</a>
-                    <a href="#">크루즈</a>
-                    <a href="#">트레킹/레저</a>
-                    <a href="#">MICE</a>
-                  </div>
-
-                  <div class="menu-anchor-all-oh">
-                    <div class="menu-all-section-oh">호텔</div>
-                    <a href="#">해외호텔</a>
-                    <a href="#">국내숙박</a>
-                  </div>
-
-                  <div class="menu-anchor-all-oh">
-                    <div class="menu-all-section-oh">투어/입장권</div>
-                    <a href="#">투어/입장권 홈</a>
-                  </div>
-
-                  <div class="menu-anchor-all-oh">
-                    <div class="menu-all-section-oh">국내여행</div>
-                    <a href="#">제주여행</a>
-                    <a href="#">내륙여행</a>
-                    <a href="#">울릉도/섬</a>
-                    <a href="#">내나라여행</a>
-                    <a href="#">국내골프</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="menu-else-oh">
-              <div class="dropdown dropdown-oh">
-                <a href="#">해외여행</a>
-                <div
-                  class="dropdown-content dropdown-content-oh menu-anchor-oversea-oh"
-                >
-                  <a href="#">유럽/아프리카/아라비아</a>
-                  <a href="#">동남아시아/대만/서남아</a>
-                  <a href="#">일본</a>
-                  <a href="#">중국/홍콩/마카오/몽골</a>
-                  <a href="#">괌/사이판/호주/뉴질랜드</a>
-                  <a href="#">지방출발</a>
-                </div>
-              </div>
-
-              <div class="dropdown dropdown-oh">
-                <a href="#">국내여행</a>
-                <div
-                  class="dropdown-content dropdown-content-oh menu-anchor-oversea-oh"
-                >
-                  <a href="#">제주도</a>
-                  <a href="#">울릉도</a>
-                  <a href="#">내륙여행</a>
-                  <a href="#">섬여행</a>
-                  <a href="#">국내골프</a>
-                  <a href="#">테마여행</a>
-                </div>
-              </div>
-
-              <div class="dropdown dropdown-oh">
-                <a href="#">항공+호텔</a>
-                <div
-                  class="dropdown-content dropdown-content-oh menu-anchor-oversea-oh"
-                >
-                  <a href="#">해외호텔</a>
-                  <a href="#">국내숙박</a>
-                  <a href="#">에어텔</a>
-                </div>
-              </div>
-
-              <div class="dropdown dropdown-oh">
-                <a href="#">투어+입장권</a>
-                <div
-                  class="dropdown-content dropdown-content-oh menu-anchor-oversea-oh fixed-on-mobile"
-                >
-                  <a href="#">투어/입장권 홈</a>
-                  <a href="#">일본</a>
-                  <a href="#">동남아/대만</a>
-                  <a href="#">남태평양</a>
-                  <a href="#">유럽/중동/아프리카</a>
-                  <a href="#">해외 렌터카</a>
-                </div>
-              </div>
-
-              <div class="dropdown dropdown-oh">
-                <a href="#">테마여행</a>
-                <div
-                  class="dropdown-content dropdown-content-oh menu-anchor-oversea-oh fixed-on-mobile"
-                >
-                  <a href="#">해외골프</a>
-                  <a href="#">허니문</a>
-                  <a href="#">밍글링 투어</a>
-                  <a href="#">크루즈</a>
-                  <a href="#">트레킹/레저</a>
-                  <a href="#">MICE</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-second-line-second-oh">
-            <a href="#"><i class="fa-solid fa-circle"></i> 로그인</a>
-            <a href="#"><i class="fa-solid fa-circle"></i> 회원가입</a>
-            <a href="#"><i class="fa-solid fa-circle"></i> 고객센터</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <h2 class="review-rate-oh">
-      <i class="fa-solid fa-award" aria-hidden="true"></i> 리뷰 평점 4.9+ 상품
-    </h2>
-
-    <div class="carousel-oh" id="carousel-oh">
-      <button class="ctrl-oh ctrl-prev-oh" aria-label="이전" id="prev-oh">
-        <span class="ctrl-icon-oh"></span>
-      </button>
-
-      <div class="viewport-oh">
-        <div class="track-oh" id="track-oh">
-          <!-- 카드 1~10 (예시) -->
-          <!-- 필요 시 이 블록을 반복 렌더링하면 됨 -->
-          <!-- 카드 1 -->
-          <article class="card-oh">
-            <div class="thumb-oh">
-              <img
-                src="https://img.modetour.com/eagle/photoimg/1291/rfile/636957854555136622.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y"
-                alt="다낭 풍경"
-              />
-              <div class="badge-oh">
-                <span>BEST<br />1</span>
-              </div>
-            </div>
-            <div class="body-oh">
-              <h3 class="title-oh">
-                [다낭/호이안] 리뷰 만족도 NO.1 패키지 4/5/6일
-              </h3>
-              <div class="tags-oh">#다낭패키지 #베스트셀러</div>
-              <div class="price-oh">279,900원 ~</div>
-            </div>
-          </article>
-
-          <!-- 카드 2 -->
-          <article class="card-oh">
-            <div class="thumb-oh">
-              <img
-                src="https://img.modetour.com/eagle/photoimg/39975/rfile/635993410308724956.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y"
-                alt="장가계"
-              />
-              <div class="badge-oh">
-                <span>BEST<br />1</span>
-              </div>
-            </div>
-            <div class="body-oh">
-              <h3 class="title-oh">
-                [장가계 고품격] 패키지 5/6일 ★유리다리+대협곡
-              </h3>
-              <div class="tags-oh">#평점만점 #300$상당의옵션포함</div>
-              <div class="price-oh">1,032,200원 ~</div>
-            </div>
-          </article>
-
-          <!-- 카드 3 -->
-          <article class="card-oh">
-            <div class="thumb-oh">
-              <img
-                src="https://img.modetour.com/eagle/photoimg/11288/rfile/638614999208587661.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y"
-                alt="시드니"
-              />
-              <div class="badge-oh">
-                <span>BEST<br />1</span>
-              </div>
-            </div>
-            <div class="body-oh">
-              <h3 class="title-oh">
-                [시드니 완전일주] 6/7일 ★오페라하우스 내부/디너크루즈
-              </h3>
-              <div class="tags-oh">#4.9+ #국적기 #베스트상품</div>
-              <div class="price-oh">1,549,000원 ~</div>
-            </div>
-          </article>
-
-          <!-- 카드 4~10: 샘플 간단 버전 -->
-          <article class="card-oh">
-            <div class="thumb-oh">
-              <img
-                src="https://img.modetour.com/eagle/photoimg/22439/rfile/635927129959287860.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y"
-                alt="해변"
-              />
-              <div class="badge-oh">
-                <span>BEST<br />1</span>
-              </div>
-            </div>
-            <div class="body-oh">
-              <h3 class="title-oh">
-                [허니문] 푸켓 6/7일★반얀트리/더나카/더쇼어
-              </h3>
-              <div class="tags-oh">#원데이올인클루시브 #5성급 풀빌라</div>
-              <div class="price-oh">1,557,000원 ~</div>
-            </div>
-          </article>
-
-          <article class="card-oh">
-            <div class="thumb-oh">
-              <img
-                src="https://img.modetour.com/eagle/photoimg/56454/rfile/636455651681287026.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y"
-                alt="사막"
-              />
-              <div class="badge-oh">
-                <span>BEST<br />1</span>
-              </div>
-            </div>
-            <div class="body-oh">
-              <h3 class="title-oh">[세부] 부담없는 베스트상품★20만원대~</h3>
-              <div class="tags-oh">#솔레아/알테라/티샤인_리조트</div>
-              <div class="price-oh">319,000원 ~</div>
-            </div>
-          </article>
-
-          <article class="card-oh">
-            <div class="thumb-oh">
-              <img
-                src="https://img.modetour.com/eagle/photoimg/78996/rfile/638594011295865013.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y"
-                alt="숲"
-              />
-              <div class="badge-oh">
-                <span>BEST<br />1</span>
-              </div>
-            </div>
-            <div class="body-oh">
-              <h3 class="title-oh">[큐슈] 온천여행★리뷰인증</h3>
-              <div class="tags-oh">#리뷰만점5점 #온천여행 #베스트상품</div>
-              <div class="price-oh">379,900원 ~</div>
-            </div>
-          </article>
-
-          <article class="card-oh">
-            <div class="thumb-oh">
-              <img
-                src="https://www.agoda.com/wp-content/uploads/2024/06/tokyo-japan.jpg"
-                alt="도시"
-              />
-              <div class="badge-oh">
-                <span>BEST<br />1</span>
-              </div>
-            </div>
-            <div class="body-oh">
-              <h3 class="title-oh">[도쿄] 미식 & 쇼핑 원정대</h3>
-              <div class="tags-oh">#스시 #라멘</div>
-              <div class="price-oh">559,000원 ~</div>
-            </div>
-          </article>
-
-          <article class="card-oh">
-            <div class="thumb-oh">
-              <img
-                src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=1200&auto=format&fit=crop"
-                alt="유럽"
-              />
-              <div class="badge-oh">
-                <span>BEST<br />1</span>
-              </div>
-            </div>
-            <div class="body-oh">
-              <h3 class="title-oh">[파리] 루브르+세느강 크루즈</h3>
-              <div class="tags-oh">#감성</div>
-              <div class="price-oh">1,399,000원 ~</div>
-            </div>
-          </article>
-
-          <article class="card-oh">
-            <div class="thumb-oh">
-              <img
-                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop"
-                alt="호수"
-              />
-              <div class="badge-oh">
-                <span>BEST<br />1</span>
-              </div>
-            </div>
-            <div class="body-oh">
-              <h3 class="title-oh">[스위스] 인터라켄 알프스</h3>
-              <div class="tags-oh">#트레킹</div>
-              <div class="price-oh">1,799,000원 ~</div>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <button class="ctrl-oh ctrl-next-oh" aria-label="다음" id="next-oh">
-        <span class="ctrl-icon-oh"></span>
-      </button>
-
-      <div class="dots-oh" id="dots-oh" aria-hidden="true"></div>
-    </div>
-
-    <script>
-      (function () {
-        const root = document.getElementById("carousel-oh");
-        const track = document.getElementById("track-oh");
-        const prevBtn = document.getElementById("prev-oh");
-        const nextBtn = document.getElementById("next-oh");
-        const dots = document.getElementById("dots-oh");
-
-        let index = 0; // 왼쪽에 위치한 첫 카드의 인덱스
-        let cardEls = Array.from(track.children);
-
-        // 인디케이터 개수 = 총카드 - (화면에보이는장수 - 1)
-        function cardsPerView() {
-          return (
-            parseInt(
-              getComputedStyle(root).getPropertyValue("--cards-per-view-oh")
-            ) || 1
-          );
-        }
-        function cardFullWidth() {
-          // gap 포함 실제 한 장 이동거리
-          if (cardEls.length === 0) return 0;
-          const first = cardEls[0];
-          const style = getComputedStyle(track);
-          const gap = parseFloat(style.gap) || 0;
-          return first.getBoundingClientRect().width + gap;
-        }
-        function maxIndex() {
-          return Math.max(0, cardEls.length - cardsPerView());
-        }
-        function clamp(v, min, max) {
-          return Math.min(max, Math.max(min, v));
-        }
-
-        function render() {
-          const dx = -index * cardFullWidth();
-          track.style.transform = `translateX(${dx}px)`;
-          prevBtn.disabled = index <= 0;
-          nextBtn.disabled = index >= maxIndex();
-          renderDots();
-        }
-
-        // Dots (페이지 개념이 아니라 "왼쪽 시작 인덱스" 기준이라 길게 생김)
-        function renderDots() {
-          const total = maxIndex() + 1; // 0~maxIndex
-          const cur = index;
-          if (
-            dots.dataset.count === String(total) &&
-            dots.dataset.active === String(cur)
-          )
-            return;
-
-          dots.innerHTML = "";
-          for (let i = 0; i < total; i++) {
-            const d = document.createElement("div");
-            d.className = "dot-oh" + (i === cur ? " is-active-oh" : "");
-            d.addEventListener("click", () => {
-              index = i;
-              render();
-            });
-            dots.appendChild(d);
-          }
-          dots.dataset.count = String(total);
-          dots.dataset.active = String(cur);
-        }
-
-        nextBtn.addEventListener("click", () => {
-          index = clamp(index + 1, 0, maxIndex());
-          render();
-        });
-        prevBtn.addEventListener("click", () => {
-          index = clamp(index - 1, 0, maxIndex());
-          render();
+        document.querySelectorAll('.booking-tab-content .row').forEach(row => {
+        row.classList.add('d-none');
         });
 
-        // 리사이즈 시 위치 재보정 (카드 개수/너비 변동 반영)
-        const ro = new ResizeObserver(() => {
-          index = clamp(index, 0, maxIndex());
-          render();
-        });
-        ro.observe(root);
+        const target = document.querySelector(`.booking-tab-content .row[data-tab="${selected}"]`);
+        if (target) target.classList.remove('d-none');
 
-        // 초기 렌더
-        render();
-      })();
+        document.querySelectorAll('.booking-nav-link').forEach(link => link.classList.remove('active'));
+        this.querySelector('.booking-nav-link').classList.add('active');
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const allRows = document.querySelectorAll('.booking-tab-content .row');
+        allRows.forEach((row, i) => {
+         row.classList.toggle('d-none', i !== 0); // 첫 번째만 표시
+        });
+    });
     </script>
   </body>
 </html>
